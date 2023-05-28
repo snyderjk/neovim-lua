@@ -98,3 +98,9 @@ lspconfig["rust_analyzer"].setup({
   capabilities = capabilities,
   on_attach = on_attach
 })
+
+require("flutter-tools").setup{
+    lsp = {
+        on_attach = on_attach
+    }
+}
