@@ -95,8 +95,11 @@ return packer.startup(function(use)
             ts_update()
         end
     })
+    use("nvim-treesitter/nvim-treesitter-context")
 
-    -- auto closint
+    -- image support
+
+    -- auto closing
     use("windwp/nvim-autopairs")
     use({ "windwp/nvim-ts-autotag", after = "nvim-treesitter" })
 
