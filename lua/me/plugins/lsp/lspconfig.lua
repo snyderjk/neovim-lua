@@ -104,3 +104,8 @@ require("flutter-tools").setup{
         on_attach = on_attach
     }
 }
+
+lspconfig["csharp_ls"].setup({
+  capabilities = capabilities,
+  on_attach = on_attach
+});
